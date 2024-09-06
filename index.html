@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto DEV QUEST JS intermediário</title>
+
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/estilos.css" />
+    <link rel="stylesheet" href="./src/css/responsivo.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="conteudo">
+      <div class="info">
+        <h1 class="titulo">FICOU COM DÚVIDA? <br />NOS MANDE UMA MENSAGEM!</h1>
+
+        <p class="descricao">
+          caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e
+          entraremos em contato em menos de 24h.
+        </p>
+      </div>
+
+      <section class="formulario">
+        <form action="index.html" method="get">
+          <div class="input-container">
+            <input
+              type="text"
+              name="nome-completo"
+              id="nome-completo"
+              class="inputs"
+              placeholder="Nome Completo *"
+            />
+            <span class="campo-obrigatorio">campo obrigatório</span>
+          </div>
+
+          <div class="input-container">
+            <input
+              type="text"
+              name="email"
+              id="email"
+              class="inputs"
+              placeholder="Email *"
+            />
+          </div>
+          <span class="campo-obrigatorio">campo obrigatório</span>
+
+          <div class="input-container">
+            <input
+              type="text"
+              name="telefone"
+              id="telefone"
+              class="inputs"
+              placeholder="Telefone *"
+            />
+          </div>
+          <span class="campo-obrigatorio">campo obrigatório</span>
+
+          <div class="input-container">
+            <textarea
+              name="mensagem"
+              id="mensagem"
+              class="inputs"
+              placeholder="Mensagem *"
+            ></textarea>
+          </div>
+          <span class="campo-obrigatorio">campo obrigatório</span>
+
+          <p class="aviso">*campos obrigatórios</p>
+
+          <button type="submit" id="enviar">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="./src/js/index.js"></script>
+  </body>
+</html>

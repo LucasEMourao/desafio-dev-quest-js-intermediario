@@ -1,0 +1,122 @@
+body {
+  background: url(../imagens/bg-repeat.jpg);
+  background-size: contain;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Roboto", sans-serif;
+}
+.conteudo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 60px;
+  position: relative;
+}
+
+.conteudo .info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  cursor: context-menu;
+}
+
+.conteudo .info .titulo {
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 23.44px;
+  max-width: 700px;
+  color: #fff;
+}
+
+.conteudo .info .descricao {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 17.58px;
+  max-width: 300px;
+  color: #fff;
+}
+
+.conteudo .formulario form .input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.conteudo .formulario form {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  max-height: 378px;
+  min-width: 340px;
+  padding: 8px 20px 20px 20px;
+}
+
+.conteudo .formulario form input {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 17.58px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  padding: 8px;
+  margin-top: 10px;
+}
+
+.conteudo .formulario form textarea {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  line-height: 17.58px;
+  height: 100px;
+  padding: 8px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  margin-top: 8px;
+  resize: none;
+}
+
+::placeholder {
+  color: #a8a8a8;
+  opacity: 0.8;
+  font-weight: 700;
+}
+
+.conteudo .formulario form .aviso {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 17.58px;
+  color: #000;
+  margin-bottom: 12px;
+}
+
+.conteudo .formulario form #enviar {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 17.58px;
+  height: 41px;
+  background-color: #3ccc87;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.conteudo .formulario form .campo-obrigatorio {
+  font-size: 8px;
+  font-weight: 400;
+  color: #f52e2e;
+  visibility: hidden;
+}
+
+.conteudo .formulario form input.valido,
+.conteudo .formulario form textarea.valido {
+  border: 1px solid #00c22b;
+}
+
+.conteudo .formulario form input.invalido,
+.conteudo .formulario form textarea.invalido {
+  border: 1px solid #f52e2e;
+}
+
+.conteudo .formulario form .campo-obrigatorio.ativa {
+  visibility: visible;
+}
